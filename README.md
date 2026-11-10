@@ -4,7 +4,7 @@ Stephen Muchemi
 
 
 ## Live Demo
-[View Live Site](https://carlosadenge.github.io/iyf-s12-week-05-carlosadenge)
+[View Live Site](https://stephenmuchemi091-dot.github.io/iyf-s12-week-05-stephenmuchemi091-dot/)
 
 ## About This Project
  I built a fully interactive To-Do List using pure JavaScript and DOM manipulation.
