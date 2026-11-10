@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        .highlight { background-color: rgb(218, 200, 13); }
+        .container { padding: 20px; border: 1px solid #ccc; }
+        .hidden { display: none; }
+        .accent { color: #8e2a5b; }
+        .completed { text-decoration: line-through; color: #57606a; }
+        .demo-box { padding: 12px; border: 1px solid #aaa; margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Assignment</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link">portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article data-id="42" data-category="tech">
+            <h2 class="title">Exercise 1</h2>
+            <p class="content">Learn coding.</p>
+        </article>
+
+        <section>
+            <h2>Form Section</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Vosti">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com">
+                <button type="submit">Submit</button>
+            </form>
+            <p id="form-message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section>
+            
+            <button type="button" id="add-paragraph">Add paragraph</button>
+            <div id="paragraph-list"></div>
+
+            <form id="task-form">
+                <label for="task-input">New task</label>
+                <input type="text" id="task-input" required>
+                <button type="submit">Add task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="grandparent" class="demo-box">
+            Grandparent area
+            <div id="parent" class="demo-box">
+                Parent area
+                <button type="button" id="child">Click</button>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; Stephen Muchemi 2026</p>
+    </footer>
+
+    <script src="dom.js"></script>
+</body>
+</html>
